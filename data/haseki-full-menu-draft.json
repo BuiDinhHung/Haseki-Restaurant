@@ -1,0 +1,1950 @@
+{
+  "note": "Draft menu JSON generated from the provided Haseki menu images. OCR/vision extraction was used, so please verify exact allergen letters, spelling and prices against the printed menu before publishing.",
+  "codexInstruction": {
+    "goal": "Use this JSON as the main data source for a NextJS restaurant website. Render categories as tabs/sections. Use representativeImage for category banners/cards. If a dish has no image, inherit representativeImage from its category. Prices are strings to preserve German comma formatting.",
+    "imageRule": "Keep original WhatsApp image filenames. Put all demo images in public/images/demo/. Do not rename image files.",
+    "style": "Inspired by phocafe.co.uk: warm Asian bistro, large food photography, beige/wood/brown palette, mobile-first, clean menu UX."
+  },
+  "restaurant": {
+    "name": "Haseki Restaurant",
+    "language": "de",
+    "currency": "EUR",
+    "cuisine": "Japanisch - Vietnamesische Küche",
+    "address": "Waltersdorfer Straße 1A, 12526 Berlin",
+    "phones": [
+      "03063313477",
+      "+49 176 15636666"
+    ],
+    "openingHours": [
+      {
+        "days": "Mo. bis Fr.",
+        "time": "11:00 - 22:00"
+      },
+      {
+        "days": "Sa. & So.",
+        "time": "11:30 - 22:00"
+      }
+    ]
+  },
+  "theme": {
+    "background": "#F8F4EC",
+    "card": "#FFFDF8",
+    "primary": "#B87946",
+    "primaryDark": "#5A3824",
+    "accentRed": "#B8322A",
+    "green": "#3F7D3A",
+    "text": "#2B2B2B",
+    "muted": "#7A6A58",
+    "headingFont": "Cormorant Garamond",
+    "bodyFont": "Montserrat"
+  },
+  "demoImages": [
+    {
+      "title": "Haki Spezial Rolle",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg"
+    },
+    {
+      "title": "Nigiri Mix",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg"
+    },
+    {
+      "title": "Haseki Süß Sauer",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg"
+    },
+    {
+      "title": "Sushi Set",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg"
+    },
+    {
+      "title": "Sushi Mix Deluxe",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg"
+    },
+    {
+      "title": "Haki Dragonroll",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg"
+    },
+    {
+      "title": "Mien Xao",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg"
+    },
+    {
+      "title": "Sushi Mix",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.19.jpeg"
+    },
+    {
+      "title": "Haseki Curry",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg"
+    },
+    {
+      "title": "Nem Ha Noi - Frühlingsrolle",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg"
+    },
+    {
+      "title": "Tuna Tataki",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg"
+    },
+    {
+      "title": "Nem Chay - Mini Frühlingsrolle",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25.jpeg"
+    },
+    {
+      "title": "Cocktails",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.26.jpeg"
+    },
+    {
+      "title": "Hausgemachte Limonade",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.51 (1).jpeg"
+    },
+    {
+      "title": "Mojito",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.51.jpeg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "vorspeisen",
+      "title": "Vorspeisen",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+      "items": [
+        {
+          "no": 1,
+          "name": "Nem Ha Noi - Frühlingsrolle",
+          "price": "5,50€",
+          "description": "2 Stk. Frühlingsrollen gefüllt mit Hackfleisch, Garnelen, Kräutern und Glasnudeln. Serviert mit traditioneller Soße.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+          "categoryId": "vorspeisen",
+          "categoryTitle": "Vorspeisen"
+        },
+        {
+          "no": 2,
+          "name": "Nem Chay - Mini Frühlingsrolle",
+          "price": "4,50€",
+          "description": "6 Stk. Mini-Frühlingsrollen mit Gemüse und Kräutern, serviert mit Süß-Sauer-Soße.",
+          "badges": [
+            "vegetarisch"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+          "categoryId": "vorspeisen",
+          "categoryTitle": "Vorspeisen"
+        },
+        {
+          "no": 3,
+          "name": "Yakitori",
+          "price": "5,50€",
+          "description": "3 Stk. Hühnerspieße mit Teriyakisoße und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+          "categoryId": "vorspeisen",
+          "categoryTitle": "Vorspeisen"
+        },
+        {
+          "no": 4,
+          "name": "Goi Cuon - Sommerrolle",
+          "price": "5,50€",
+          "description": "2 Stk. Sommerrollen mit Garnelen und Hühnchen, Reisnudeln und Kräutern in Reispapier. Auch mit Tofu möglich. Serviert mit traditioneller Soße.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+          "categoryId": "vorspeisen",
+          "categoryTitle": "Vorspeisen"
+        },
+        {
+          "no": 5,
+          "name": "Dau Nhat - Edamame",
+          "price": "5,50€",
+          "description": "Japanische Bohnen mit Salz.",
+          "badges": [
+            "vegetarisch"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+          "categoryId": "vorspeisen",
+          "categoryTitle": "Vorspeisen"
+        },
+        {
+          "no": 6,
+          "name": "Tom Com - Ebi Tempura",
+          "price": "6,20€",
+          "description": "2 Stk. knusprige Großgarnelen mit Reisflockenmantel, serviert mit Süß-Sauer-Soße.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+          "categoryId": "vorspeisen",
+          "categoryTitle": "Vorspeisen"
+        },
+        {
+          "no": 7,
+          "name": "Ha Cao Tom",
+          "price": "6,20€",
+          "description": "4 Stk. gedämpfte Teigtaschen aus Reismehl, gefüllt mit Garnelen. Serviert mit traditioneller Soße und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+          "categoryId": "vorspeisen",
+          "categoryTitle": "Vorspeisen"
+        },
+        {
+          "no": 7.1,
+          "name": "Gyoza",
+          "price": "6,20€",
+          "description": "Gedämpfte Teigtaschen mit würziger Mischung aus Hackfleisch und Gemüse, Chinakohl und Frühlingszwiebeln.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+          "categoryId": "vorspeisen",
+          "categoryTitle": "Vorspeisen"
+        }
+      ]
+    },
+    {
+      "id": "suppen",
+      "title": "Suppen",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "items": [
+        {
+          "no": 8,
+          "name": "Sauer-Scharf-Suppe",
+          "price": "5,00€",
+          "description": "Mit Hühnerfleisch, Bambus, Paprika, Champignons, Morcheln, Möhren und Ei.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "suppen",
+          "categoryTitle": "Suppen"
+        },
+        {
+          "no": 9,
+          "name": "Tom Kha Suppe",
+          "description": "Würzige Suppe mit Kokosmilch, Zitronengras, Champignons, Tomaten, Koriander und Zutat nach Wahl.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "5,50€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "6,50€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "5,00€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "suppen",
+          "categoryTitle": "Suppen"
+        },
+        {
+          "no": 10,
+          "name": "Tom Yum Suppe",
+          "description": "Würzige Zitronengras-Suppe mit Champignons, Tomaten, Koriander und Zutat nach Wahl.",
+          "options": [
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "6,50€"
+            },
+            {
+              "key": "f",
+              "label": "Lachs",
+              "price": "6,50€"
+            },
+            {
+              "key": "g",
+              "label": "Thunfisch",
+              "price": "6,50€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "5,00€"
+            }
+          ],
+          "badges": [
+            "scharf"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "suppen",
+          "categoryTitle": "Suppen"
+        },
+        {
+          "no": 11,
+          "name": "Miso Suppe",
+          "description": "Mit Sojabohnenpaste und Seetang, wahlweise mit:",
+          "options": [
+            {
+              "key": "f",
+              "label": "Lachs",
+              "price": "6,50€"
+            },
+            {
+              "key": "g",
+              "label": "Thunfisch",
+              "price": "6,50€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "4,50€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "suppen",
+          "categoryTitle": "Suppen"
+        }
+      ]
+    },
+    {
+      "id": "salat",
+      "title": "Salat",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "items": [
+        {
+          "no": 12,
+          "name": "Nom Du Du - Papayasalat",
+          "price": "7,50€",
+          "description": "Julienne aus grüner Papaya, Garnelen, Karotten, vietnamesischen Kräutern, Erdnüssen, Sesam und Limetten-Fisch-Vinaigrette. Auch mit Tofu möglich.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "salat",
+          "categoryTitle": "Salat"
+        },
+        {
+          "no": 13,
+          "name": "Nom Xoai - Mangosalat",
+          "price": "6,90€",
+          "description": "Aromatische Mangostreifen mit Rindfleisch, Karotten, Gurke, Erdnüssen, vietnamesischen Kräutern, Sesam und Limetten-Fisch-Vinaigrette. Auch mit Tofu möglich.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "salat",
+          "categoryTitle": "Salat"
+        },
+        {
+          "no": 14,
+          "name": "Nom Mien - Glasnudelsalat",
+          "price": "6,90€",
+          "description": "Glasnudelsalat mit Hühnerfleisch und vietnamesischen Kräutern, Limetten-Fisch-Vinaigrette, gerösteten Erdnüssen, Sesam und Röstzwiebeln. Auch mit Tofu möglich.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "salat",
+          "categoryTitle": "Salat"
+        },
+        {
+          "no": 15,
+          "name": "Seetang Salat",
+          "price": "4,90€",
+          "description": "Gemischter Salat mit Seetang und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "salat",
+          "categoryTitle": "Salat"
+        }
+      ]
+    },
+    {
+      "id": "japanisch-tradition",
+      "title": "Japanisch Tradition",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "items": [
+        {
+          "no": 17,
+          "name": "Miso Ramen",
+          "price": "15,90€",
+          "description": "Hühnerbrühe, Miso-Basis mit Bambus, Mais und Sojasprossen, Ei, dazu Schweine-Chashu oder Hühnchen.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "japanisch-tradition",
+          "categoryTitle": "Japanisch Tradition"
+        },
+        {
+          "no": 18,
+          "name": "Tokuton Kotsu",
+          "price": "15,90€",
+          "description": "Meeresfrüchtebrühe, Salz-Basis mit Mu-Err-Pilzen, Frühlingszwiebeln, Nori-Blättern, dazu Schweine-Chashu und Schweine-Kakuni.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "japanisch-tradition",
+          "categoryTitle": "Japanisch Tradition"
+        },
+        {
+          "no": 19,
+          "name": "Yuzu Shoyu",
+          "price": "15,90€",
+          "description": "Hühner- und Meeresfrüchtebrühe, Sojasoße-Basis mit Gemüse, Yuzu, Ei, dazu Schweine-Chashu oder Hühnchen.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "japanisch-tradition",
+          "categoryTitle": "Japanisch Tradition"
+        }
+      ]
+    },
+    {
+      "id": "vietnamesisch-tradition",
+      "title": "Vietnamesisch Tradition",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+      "items": [
+        {
+          "no": 20,
+          "name": "Pho Ha Noi",
+          "description": "Traditionelle vietnamesische Reisbandnudelsuppe mit frischen Kräutern und Sojasprossen.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch gekocht",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            },
+            {
+              "key": "j",
+              "label": "Rindfleisch gebraten",
+              "price": "15,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "vietnamesisch-tradition",
+          "categoryTitle": "Vietnamesisch Tradition"
+        },
+        {
+          "no": 21,
+          "name": "Pho Curry",
+          "description": "Reisbandnudeln mit roter Curry-Kokosmilch, Salat und Sojasprossen.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "vietnamesisch-tradition",
+          "categoryTitle": "Vietnamesisch Tradition"
+        },
+        {
+          "no": 22,
+          "name": "Bun Cha Thit Nuong",
+          "price": "14,90€",
+          "description": "Frisch gegrilltes Schweinebauchfleisch, serviert mit Reisnudeln, Salat, frischen Kräutern, gerösteten Erdnüssen, Röstzwiebeln und Limetten-Fisch-Vinaigrette.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "vietnamesisch-tradition",
+          "categoryTitle": "Vietnamesisch Tradition"
+        },
+        {
+          "no": 23,
+          "name": "Bun Bo Nam Bo",
+          "price": "14,90€",
+          "description": "Herzhaft mariniertes Rindfleisch im Wok mit Zitronengras, serviert mit Reisnudeln, Salat, Kräutern, gerösteten Erdnüssen, Röstzwiebeln und Limetten-Fisch-Vinaigrette. Auch mit Hühnerfleisch oder Tofu möglich.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "vietnamesisch-tradition",
+          "categoryTitle": "Vietnamesisch Tradition"
+        },
+        {
+          "no": 24,
+          "name": "Bun Cha La Lot",
+          "price": "14,90€",
+          "description": "In Betelblättern eingelegtes Rind- und Schweinehackfleisch, gegrillt mit Reisnudeln, Salat, Kräutern, gerösteten Erdnüssen, Röstzwiebeln und Limetten-Fisch-Vinaigrette.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "vietnamesisch-tradition",
+          "categoryTitle": "Vietnamesisch Tradition"
+        },
+        {
+          "no": 26,
+          "name": "Pad Thai",
+          "description": "Gebratene Reisbandnudeln mit frischen Kräutern und Sojasprossen.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Huhn",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rind",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnele",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Ente",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "vietnamesisch-tradition",
+          "categoryTitle": "Vietnamesisch Tradition"
+        },
+        {
+          "no": 27,
+          "name": "Pho Xao",
+          "description": "Gebratene Reisbandnudeln mit verschiedenem Gemüse, Sojasprossen, Ei, Pak Choi, gerösteten Erdnüssen und Röstzwiebeln.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "vietnamesisch-tradition",
+          "categoryTitle": "Vietnamesisch Tradition"
+        },
+        {
+          "no": 28,
+          "name": "Mien Xao",
+          "description": "Gebratene Glasnudeln mit verschiedenem Gemüse, Ei, Sojasprossen, Salat, gerösteten Erdnüssen und Röstzwiebeln.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "17,90€"
+            },
+            {
+              "key": "f",
+              "label": "gegrilltem Lachs ca. 150g",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "vietnamesisch-tradition",
+          "categoryTitle": "Vietnamesisch Tradition"
+        },
+        {
+          "no": 29,
+          "name": "Udon Xao",
+          "description": "Gebratene Udon-Nudeln mit Gemüse und Zutat nach Wahl.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "vietnamesisch-tradition",
+          "categoryTitle": "Vietnamesisch Tradition"
+        }
+      ]
+    },
+    {
+      "id": "jasminreis-mit-sosse",
+      "title": "Jasminreis mit Soße",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+      "items": [
+        {
+          "no": 30,
+          "name": "Haseki Chop Suey",
+          "description": "Verschiedenes Gemüse, Knoblauch und dunkle Soße.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "17,90€"
+            },
+            {
+              "key": "f",
+              "label": "gegrilltem Lachs ca. 150g",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+          "categoryId": "jasminreis-mit-sosse",
+          "categoryTitle": "Jasminreis mit Soße"
+        },
+        {
+          "no": 31,
+          "name": "Haseki Curry",
+          "description": "Leicht scharfe rote Curry-Kokosmilchsoße, gekocht mit Saisongemüse, Aubergine und Champignons.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "17,90€"
+            },
+            {
+              "key": "f",
+              "label": "gegrilltem Lachs ca. 150g",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "badges": [
+            "scharf"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+          "categoryId": "jasminreis-mit-sosse",
+          "categoryTitle": "Jasminreis mit Soße"
+        },
+        {
+          "no": 32,
+          "name": "Haseki Erdnuss",
+          "description": "Erdnuss-Kokosmilchsoße, gekocht mit Saisongemüse, Champignons und Paprika.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "17,90€"
+            },
+            {
+              "key": "f",
+              "label": "gegrilltem Lachs ca. 150g",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+          "categoryId": "jasminreis-mit-sosse",
+          "categoryTitle": "Jasminreis mit Soße"
+        },
+        {
+          "no": 33,
+          "name": "Haseki Mango",
+          "description": "Mango-Kokosmilchsoße mit Champignons, Paprika und Saisongemüse.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "17,90€"
+            },
+            {
+              "key": "f",
+              "label": "gegrilltem Lachs ca. 150g",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+          "categoryId": "jasminreis-mit-sosse",
+          "categoryTitle": "Jasminreis mit Soße"
+        },
+        {
+          "no": 34,
+          "name": "Haseki Süß Sauer",
+          "description": "Süß-Sauer-Soße mit Saisongemüse, serviert mit Jasminreis.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "17,90€"
+            },
+            {
+              "key": "f",
+              "label": "gegrilltem Lachs ca. 150g",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+          "categoryId": "jasminreis-mit-sosse",
+          "categoryTitle": "Jasminreis mit Soße"
+        },
+        {
+          "no": 35,
+          "name": "Xao Sa Ot",
+          "description": "Gebratenes Gemüse-Mix mit Chili, Bambus, Zitronengras, Karotten und Sellerie.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Hühnerfleisch",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rindfleisch",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnelen",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "17,90€"
+            },
+            {
+              "key": "f",
+              "label": "gegrilltem Lachs ca. 150g",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "badges": [
+            "scharf"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+          "categoryId": "jasminreis-mit-sosse",
+          "categoryTitle": "Jasminreis mit Soße"
+        },
+        {
+          "no": 36,
+          "name": "Bo Khoai Lang - Süßkartoffel Rind",
+          "price": "16,90€",
+          "description": "1/2 flambierte Süßkartoffel, leicht scharf gebratenes Rindfleisch und Gemüse, serviert mit Reis.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+          "categoryId": "jasminreis-mit-sosse",
+          "categoryTitle": "Jasminreis mit Soße"
+        },
+        {
+          "no": 37,
+          "name": "Teriyaki Soße",
+          "description": "Gebratenes Gemüse mit Teriyaki-Soße, serviert mit Jasminreis und Zutat nach Wahl.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Huhn",
+              "price": "13,90€"
+            },
+            {
+              "key": "b",
+              "label": "Rind",
+              "price": "14,90€"
+            },
+            {
+              "key": "c",
+              "label": "Garnele",
+              "price": "14,90€"
+            },
+            {
+              "key": "d",
+              "label": "Knuspriges Hühnerbrustfilet",
+              "price": "14,90€"
+            },
+            {
+              "key": "e",
+              "label": "Ente",
+              "price": "17,90€"
+            },
+            {
+              "key": "f",
+              "label": "Lachs",
+              "price": "17,90€"
+            },
+            {
+              "key": "h",
+              "label": "Tofu",
+              "price": "12,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+          "categoryId": "jasminreis-mit-sosse",
+          "categoryTitle": "Jasminreis mit Soße"
+        }
+      ]
+    },
+    {
+      "id": "spezialitaeten",
+      "title": "Spezialitäten",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "items": [
+        {
+          "no": 40,
+          "name": "Haseki Heiße Platte",
+          "description": "Serviert auf der heißen Platte mit verschiedenem Gemüse und dunkler Soße, serviert mit Jasminreis.",
+          "options": [
+            {
+              "key": "c",
+              "label": "6 gegrillte Garnelen in der Schale",
+              "price": "17,90€"
+            },
+            {
+              "key": "e",
+              "label": "Entenbrust",
+              "price": "18,90€"
+            },
+            {
+              "key": "f",
+              "label": "Lachs",
+              "price": "18,90€"
+            },
+            {
+              "key": "g",
+              "label": "Thunfisch",
+              "price": "18,90€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "spezialitaeten",
+          "categoryTitle": "Spezialitäten"
+        },
+        {
+          "no": 41,
+          "name": "Pho Haseki",
+          "price": "20,90€",
+          "description": "Traditionelle vietnamesische Reisbandnudelsuppe mit frischen Kräutern, Sojasprossen und hochwertigem Rindfleisch.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "spezialitaeten",
+          "categoryTitle": "Spezialitäten"
+        },
+        {
+          "no": 42,
+          "name": "Rindfleisch Luc Lac",
+          "price": "24,90€",
+          "description": "Serviert auf der heißen Platte mit verschiedenem Gemüse und dunkler Soße, serviert mit Jasminreis und hochwertigem Rindfleisch.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "spezialitaeten",
+          "categoryTitle": "Spezialitäten"
+        },
+        {
+          "no": 43,
+          "name": "Gebratene Royal Dorade",
+          "price": "24,90€",
+          "description": "Knusprig gebratene, marinierte Dorade, serviert mit spezieller Haseki-Sauce.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "spezialitaeten",
+          "categoryTitle": "Spezialitäten"
+        },
+        {
+          "no": 44,
+          "name": "Tigergarnelen mit grünem Pfeffer",
+          "price": "20,90€",
+          "description": "9 Tigergarnelen mit vietnamesischem grünem Pfeffer, saisonalem Gemüse und Premium-Gemüse.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+          "categoryId": "spezialitaeten",
+          "categoryTitle": "Spezialitäten"
+        }
+      ]
+    },
+    {
+      "id": "kinder-beilagen",
+      "title": "Kinder & Beilagen",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25.jpeg",
+      "items": [
+        {
+          "no": 50,
+          "name": "Pommes mit knusprigem Hähnchenbrustfilet",
+          "price": "8,50€",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25.jpeg",
+          "categoryId": "kinder-beilagen",
+          "categoryTitle": "Kinder & Beilagen"
+        },
+        {
+          "no": 51,
+          "name": "Gebratener Reis mit Hühnerfleisch",
+          "price": "8,50€",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25.jpeg",
+          "categoryId": "kinder-beilagen",
+          "categoryTitle": "Kinder & Beilagen"
+        },
+        {
+          "no": 52,
+          "name": "Beilage",
+          "description": "Beilagen und extra Soßen.",
+          "options": [
+            {
+              "key": "a",
+              "label": "Pommes",
+              "price": "3,00€"
+            },
+            {
+              "key": "b",
+              "label": "Süßkartoffelpommes",
+              "price": "3,50€"
+            },
+            {
+              "key": "c",
+              "label": "Jasmin Reis",
+              "price": "2,50€"
+            },
+            {
+              "key": "d",
+              "label": "Gebratene Nudeln",
+              "price": "3,00€"
+            },
+            {
+              "key": "e",
+              "label": "Gebratener Reis",
+              "price": "3,00€"
+            },
+            {
+              "key": "f",
+              "label": "Alle Soßen Art",
+              "price": "3,00€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25.jpeg",
+          "categoryId": "kinder-beilagen",
+          "categoryTitle": "Kinder & Beilagen"
+        }
+      ]
+    },
+    {
+      "id": "haki-sushi-tapas",
+      "title": "Haki Sushi Tapas 2 Stk.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "items": [
+        {
+          "no": 100,
+          "name": "Love on the Boat",
+          "price": "5,30€",
+          "description": "Lachstatar und Thunfischtatar auf Avocado und Frühlingszwiebeln.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-sushi-tapas",
+          "categoryTitle": "Haki Sushi Tapas 2 Stk."
+        },
+        {
+          "no": 101,
+          "name": "Salmon Aburi",
+          "price": "5,10€",
+          "description": "Flambierter Lachs mit grünem Babyspargel.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-sushi-tapas",
+          "categoryTitle": "Haki Sushi Tapas 2 Stk."
+        },
+        {
+          "no": 102,
+          "name": "Tuna Aburi",
+          "price": "5,10€",
+          "description": "Flambierter Thunfisch mit grünem Babyspargel.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-sushi-tapas",
+          "categoryTitle": "Haki Sushi Tapas 2 Stk."
+        },
+        {
+          "no": 103,
+          "name": "Salmon Aburi",
+          "price": "5,30€",
+          "description": "Flambierter Lachs mit Lachstatar.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-sushi-tapas",
+          "categoryTitle": "Haki Sushi Tapas 2 Stk."
+        },
+        {
+          "no": 104,
+          "name": "Tuna Rose",
+          "price": "5,30€",
+          "description": "Flambierter Thunfisch mit Thunfischtatar.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-sushi-tapas",
+          "categoryTitle": "Haki Sushi Tapas 2 Stk."
+        },
+        {
+          "no": 105,
+          "name": "Crayfish Rose",
+          "price": "5,30€",
+          "description": "Flusskrebstatar mit Gurken umwickelt.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-sushi-tapas",
+          "categoryTitle": "Haki Sushi Tapas 2 Stk."
+        }
+      ]
+    },
+    {
+      "id": "haki-nigiri",
+      "title": "Haki Nigiri 2 Stk.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "items": [
+        {
+          "no": 110,
+          "name": "Sake Nigiri",
+          "price": "4,90€",
+          "description": "Lachs",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        },
+        {
+          "no": 111,
+          "name": "Maguro Nigiri",
+          "price": "4,90€",
+          "description": "Thunfisch",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        },
+        {
+          "no": 112,
+          "name": "Mutsu Nigiri",
+          "price": "4,90€",
+          "description": "Butterfisch",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        },
+        {
+          "no": 113,
+          "name": "Kani Nigiri",
+          "price": "4,50€",
+          "description": "Krebsfleischimitat",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        },
+        {
+          "no": 114,
+          "name": "Ebi Nigiri",
+          "price": "4,90€",
+          "description": "Großgarnele",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        },
+        {
+          "no": 115,
+          "name": "Unagi Nigiri",
+          "price": "4,90€",
+          "description": "Gegrillter Aal",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        },
+        {
+          "no": 116,
+          "name": "Flame Sake Avo",
+          "price": "4,90€",
+          "description": "Flambierter Lachs, Avocado",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        },
+        {
+          "no": 117,
+          "name": "Flame Maguro Avo",
+          "price": "4,90€",
+          "description": "Flambierter Thunfisch, Avocado",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        },
+        {
+          "no": 118,
+          "name": "Avo Nigiri",
+          "price": "4,50€",
+          "description": "Avocado",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        },
+        {
+          "no": 119,
+          "name": "Inari Nigiri",
+          "price": "4,50€",
+          "description": "Tofutasche",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+          "categoryId": "haki-nigiri",
+          "categoryTitle": "Haki Nigiri 2 Stk."
+        }
+      ]
+    },
+    {
+      "id": "maki",
+      "title": "Maki 6 Stk.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+      "items": [
+        {
+          "no": 120,
+          "name": "Sake Maki",
+          "price": "5,30€",
+          "description": "Lachs",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 121,
+          "name": "Sake Avo Maki",
+          "price": "5,30€",
+          "description": "Lachs, Avocado",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 122,
+          "name": "Tekka Maki",
+          "price": "5,30€",
+          "description": "Thunfisch",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 123,
+          "name": "Tekka Avo Maki",
+          "price": "5,30€",
+          "description": "Thunfisch, Avocado",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 124,
+          "name": "Ebi Maki",
+          "price": "5,30€",
+          "description": "Großgarnele",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 125,
+          "name": "Ebi Avo Maki",
+          "price": "5,30€",
+          "description": "Großgarnele, Avocado",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 126,
+          "name": "Unagi Maki",
+          "price": "5,30€",
+          "description": "Gegrillter Aal",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 127,
+          "name": "California Maki",
+          "price": "4,90€",
+          "description": "Krebsfleischimitat, Avocado",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 128,
+          "name": "Avocado Maki",
+          "price": "4,50€",
+          "description": "Avocado",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 129,
+          "name": "Kappa Maki",
+          "price": "4,50€",
+          "description": "Gurke",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 130,
+          "name": "Rucola Maki",
+          "price": "4,50€",
+          "description": "Rucola, Frischkäse",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 131,
+          "name": "Inari Maki",
+          "price": "4,50€",
+          "description": "Japanische Tofutasche",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 132,
+          "name": "Babyspagel Maki",
+          "price": "4,50€",
+          "description": "Babyspargel",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        },
+        {
+          "no": 133,
+          "name": "Shinko Maki",
+          "price": "4,50€",
+          "description": "Japanisch eingelegter Rettich",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+          "categoryId": "maki",
+          "categoryTitle": "Maki 6 Stk."
+        }
+      ]
+    },
+    {
+      "id": "sashimi",
+      "title": "Sashimi",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "items": [
+        {
+          "no": 140,
+          "name": "Salmon Sashimi",
+          "price": "15,90€",
+          "description": "6 Stk. Scheiben vom Lachs",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "sashimi",
+          "categoryTitle": "Sashimi"
+        },
+        {
+          "no": 141,
+          "name": "Tuna Sashimi",
+          "price": "15,90€",
+          "description": "6 Stk. Scheiben vom Thunfisch",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "sashimi",
+          "categoryTitle": "Sashimi"
+        },
+        {
+          "no": 142,
+          "name": "Mutsu Sashimi",
+          "price": "14,90€",
+          "description": "6 Stk. Scheiben vom Butterfisch",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "sashimi",
+          "categoryTitle": "Sashimi"
+        },
+        {
+          "no": 143,
+          "name": "Haki Mix Sashimi",
+          "price": "26,90€",
+          "description": "Verschiedene Fischsorten",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "sashimi",
+          "categoryTitle": "Sashimi"
+        }
+      ]
+    },
+    {
+      "id": "carpaccio-tataki",
+      "title": "Carpaccio & Tataki",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "description": "Serviert mit Salat und Ponzusoße, garniert mit Bonitoflocken, Tobiko und Sesam.",
+      "items": [
+        {
+          "no": 150,
+          "name": "Salmon Carpaccio",
+          "price": "16,90€",
+          "description": "9 Stk. rohe Lachsscheiben",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "carpaccio-tataki",
+          "categoryTitle": "Carpaccio & Tataki"
+        },
+        {
+          "no": 151,
+          "name": "Salmon Tataki",
+          "price": "16,90€",
+          "description": "9 Stk. leicht angegrillte Lachsscheiben",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "carpaccio-tataki",
+          "categoryTitle": "Carpaccio & Tataki"
+        },
+        {
+          "no": 152,
+          "name": "Tuna Carpaccio",
+          "price": "16,90€",
+          "description": "9 Stk. rohe Thunfischscheiben",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "carpaccio-tataki",
+          "categoryTitle": "Carpaccio & Tataki"
+        },
+        {
+          "no": 153,
+          "name": "Tuna Tataki",
+          "price": "16,90€",
+          "description": "9 Stk. leicht angegrillte Thunfischscheiben",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "carpaccio-tataki",
+          "categoryTitle": "Carpaccio & Tataki"
+        },
+        {
+          "no": 154,
+          "name": "Mix Carpaccio",
+          "price": "25,90€",
+          "description": "15 Stk. gemischte rohe Fischscheiben",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+          "categoryId": "carpaccio-tataki",
+          "categoryTitle": "Carpaccio & Tataki"
+        }
+      ]
+    },
+    {
+      "id": "haki-crunchy",
+      "title": "Haki Crunchy 8 Stk.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+      "items": [
+        {
+          "no": 160,
+          "name": "Salmon Crunchy",
+          "price": "7,90€",
+          "description": "Panierte Mini-Rollen mit Lachs, Frischkäse und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-crunchy",
+          "categoryTitle": "Haki Crunchy 8 Stk."
+        },
+        {
+          "no": 161,
+          "name": "Tuna Spicy Crunchy",
+          "price": "7,90€",
+          "description": "Panierte Mini-Rollen mit Thunfisch-Tatar, Frühlingszwiebel, Frischkäse und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-crunchy",
+          "categoryTitle": "Haki Crunchy 8 Stk."
+        },
+        {
+          "no": 162,
+          "name": "Mutsu Spicy Crunchy",
+          "price": "7,90€",
+          "description": "Panierte Mini-Rollen mit Butterfisch, Frischkäse und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-crunchy",
+          "categoryTitle": "Haki Crunchy 8 Stk."
+        },
+        {
+          "no": 163,
+          "name": "Ebi Avo Crunchy",
+          "price": "7,90€",
+          "description": "Panierte Mini-Rollen mit Garnele, Avocado, Frischkäse und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-crunchy",
+          "categoryTitle": "Haki Crunchy 8 Stk."
+        },
+        {
+          "no": 164,
+          "name": "Ebi Spicy Crunchy",
+          "price": "7,90€",
+          "description": "Panierte Mini-Rollen mit Krebsfleisch-Tatar, Frischkäse und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-crunchy",
+          "categoryTitle": "Haki Crunchy 8 Stk."
+        },
+        {
+          "no": 165,
+          "name": "Chicken Crunchy",
+          "price": "7,90€",
+          "description": "Panierte Mini-Rollen mit Hühnerfleisch, Frischkäse und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-crunchy",
+          "categoryTitle": "Haki Crunchy 8 Stk."
+        },
+        {
+          "no": 166,
+          "name": "Vegi Crunchy",
+          "price": "7,50€",
+          "description": "Panierte Mini-Rollen gefüllt mit verschiedenem Gemüse, Frischkäse und Sesam.",
+          "badges": [
+            "vegetarisch"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-crunchy",
+          "categoryTitle": "Haki Crunchy 8 Stk."
+        }
+      ]
+    },
+    {
+      "id": "inside-out",
+      "title": "Inside Out 8 Stk.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+      "items": [
+        {
+          "no": 170,
+          "name": "Sake I.O",
+          "price": "8,90€",
+          "description": "Lachs, Avocado, Frischkäse und Tobiko.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 171,
+          "name": "Tekka I.O",
+          "price": "8,90€",
+          "description": "Thunfisch, Avocado, Frischkäse und Tobiko.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 172,
+          "name": "Mutsu I.O",
+          "price": "8,90€",
+          "description": "Butterfisch, Gurke, Lauch und Sesam.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 173,
+          "name": "California I.O",
+          "price": "8,90€",
+          "description": "Krebsfleischimitat, Avocado, Frischkäse und Tobiko.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 174,
+          "name": "Tekka Spicy I.O",
+          "price": "8,90€",
+          "description": "Thunfisch-Tatar, Chilisoße, Lauch, Gurke, Tobiko und Sesam.",
+          "badges": [
+            "scharf"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 175,
+          "name": "Ebi I.O",
+          "price": "8,90€",
+          "description": "Großgarnele, Avocado, Frischkäse und Tobiko.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 176,
+          "name": "Ebi Spicy I.O",
+          "price": "8,90€",
+          "description": "Flusskrebs-Tatar, Chilisoße, Avocado, Tobiko und Sesam.",
+          "badges": [
+            "scharf"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 177,
+          "name": "Haki Salmon I.O",
+          "price": "8,90€",
+          "description": "Lachstatar, Avocado, Gurke, Lauch und Tempuraflocken.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 178,
+          "name": "Haki Tuna I.O",
+          "price": "8,90€",
+          "description": "Thunfischtatar, Avocado, Gurke, Lauch und Tempuraflocken.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 179,
+          "name": "Haki Crayfish I.O",
+          "price": "8,90€",
+          "description": "Flusskrebs-Tatar, Avocado, Gurke, Lauch und Tempuraflocken.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 180,
+          "name": "Haki Unagi I.O",
+          "price": "8,90€",
+          "description": "Gegrillter Aal, Avocado, Gurke und Tempuraflocken.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        },
+        {
+          "no": 181,
+          "name": "Haki Vegi I.O",
+          "price": "7,90€",
+          "description": "Avocado, Gurke, Rettich, Shiitake und Sesam.",
+          "badges": [
+            "vegetarisch"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+          "categoryId": "inside-out",
+          "categoryTitle": "Inside Out 8 Stk."
+        }
+      ]
+    },
+    {
+      "id": "haki-spezial-rolle",
+      "title": "Haki Spezial Rolle 4 Stk. oder 8 Stk.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+      "items": [
+        {
+          "no": 182,
+          "name": "Haki Flameroll",
+          "description": "Ebi Tempura, Frischkäse, Avocado, obendrauf flambierter Lachs.",
+          "options": [
+            {
+              "label": "4 Stk.",
+              "price": "7,20€"
+            },
+            {
+              "label": "8 Stk.",
+              "price": "13,50€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-spezial-rolle",
+          "categoryTitle": "Haki Spezial Rolle 4 Stk. oder 8 Stk."
+        },
+        {
+          "no": 183,
+          "name": "Haki Craw",
+          "description": "Flusskrebs-Tatar mit Baby-Spargel, obendrauf flambierter Lachs und Sesam.",
+          "options": [
+            {
+              "label": "4 Stk.",
+              "price": "7,20€"
+            },
+            {
+              "label": "8 Stk.",
+              "price": "13,50€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-spezial-rolle",
+          "categoryTitle": "Haki Spezial Rolle 4 Stk. oder 8 Stk."
+        },
+        {
+          "no": 184,
+          "name": "Haki Rainbowroll",
+          "description": "Gemüse Tempura, Frischkäse, obendrauf verschiedene Fischauflagen und Sesam.",
+          "options": [
+            {
+              "label": "4 Stk.",
+              "price": "7,20€"
+            },
+            {
+              "label": "8 Stk.",
+              "price": "13,50€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-spezial-rolle",
+          "categoryTitle": "Haki Spezial Rolle 4 Stk. oder 8 Stk."
+        },
+        {
+          "no": 185,
+          "name": "Haki Dragonroll",
+          "description": "Panierter Lachs, Frischkäse, Avocado, obendrauf gegrillter Aal.",
+          "options": [
+            {
+              "label": "4 Stk.",
+              "price": "7,20€"
+            },
+            {
+              "label": "8 Stk.",
+              "price": "13,50€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-spezial-rolle",
+          "categoryTitle": "Haki Spezial Rolle 4 Stk. oder 8 Stk."
+        },
+        {
+          "no": 186,
+          "name": "Haki Favourite",
+          "description": "Ebi Tempura, Avocado, Frischkäse, obendrauf flambierter Thunfisch und Sesam.",
+          "options": [
+            {
+              "label": "4 Stk.",
+              "price": "7,20€"
+            },
+            {
+              "label": "8 Stk.",
+              "price": "13,50€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-spezial-rolle",
+          "categoryTitle": "Haki Spezial Rolle 4 Stk. oder 8 Stk."
+        },
+        {
+          "no": 187,
+          "name": "Haki Snowroll",
+          "description": "Avocado, Rettich, Frischkäse, obendrauf flambierter Butterfisch und Sesam.",
+          "options": [
+            {
+              "label": "4 Stk.",
+              "price": "7,20€"
+            },
+            {
+              "label": "8 Stk.",
+              "price": "13,50€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-spezial-rolle",
+          "categoryTitle": "Haki Spezial Rolle 4 Stk. oder 8 Stk."
+        },
+        {
+          "no": 188,
+          "name": "Haki Ebi",
+          "description": "Avocado, Gurke, Frischkäse, obendrauf Großgarnele und Sesam.",
+          "options": [
+            {
+              "label": "4 Stk.",
+              "price": "7,20€"
+            },
+            {
+              "label": "8 Stk.",
+              "price": "13,50€"
+            }
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+          "categoryId": "haki-spezial-rolle",
+          "categoryTitle": "Haki Spezial Rolle 4 Stk. oder 8 Stk."
+        }
+      ]
+    },
+    {
+      "id": "haki-menu",
+      "title": "Haki Menu",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+      "items": [
+        {
+          "no": 200,
+          "name": "Nigiri Mix",
+          "price": "12,80€",
+          "description": "1 Stk. Tuna, 1 Stk. Mutsu, 1 Stk. Avocado, 1 Stk. Sake, 1 Stk. Ebi, 1 Stk. Unagi.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+          "categoryId": "haki-menu",
+          "categoryTitle": "Haki Menu"
+        },
+        {
+          "no": 201,
+          "name": "Maki Mix",
+          "price": "13,80€",
+          "description": "3 Stk. Avocado, 3 Stk. Gurke, 6 Stk. Sake, 6 Stk. Tekka.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+          "categoryId": "haki-menu",
+          "categoryTitle": "Haki Menu"
+        },
+        {
+          "no": 202,
+          "name": "Sushi Mix",
+          "price": "16,80€",
+          "description": "6 Stk. Avo Maki, 4 Stk. Nigiri, 8 Stk. Sake I.O.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+          "categoryId": "haki-menu",
+          "categoryTitle": "Haki Menu"
+        },
+        {
+          "no": 203,
+          "name": "Salmon Set",
+          "price": "16,80€",
+          "description": "3 Stk. Sake Nigiri, 6 Stk. Sake Maki, 8 Stk. Salmon Crunchy.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+          "categoryId": "haki-menu",
+          "categoryTitle": "Haki Menu"
+        },
+        {
+          "no": 204,
+          "name": "Tuna Set",
+          "price": "17,80€",
+          "description": "3 Stk. Maguro Nigiri, 6 Stk. Tekka Maki, 8 Stk. Tuna Crunchy.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+          "categoryId": "haki-menu",
+          "categoryTitle": "Haki Menu"
+        },
+        {
+          "no": 205,
+          "name": "Veggie Set",
+          "price": "12,80€",
+          "description": "6 Stk. Kappa Maki, 1 Stk. Inari Nigiri, 1 Stk. Avo Nigiri, 8 Stk. Veggie I.O. Rolls.",
+          "badges": [
+            "vegetarisch"
+          ],
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+          "categoryId": "haki-menu",
+          "categoryTitle": "Haki Menu"
+        },
+        {
+          "no": 206,
+          "name": "Tokyo by Night",
+          "price": "43,90€",
+          "description": "Für 2 Personen. 2 Stk. Sake Nigiri, 2 Stk. Crayfish Rose, 2 Stk. Maguro Nigiri, 2 Stk. Ebi Nigiri, Maki Mix, 8 Stk. Haki Dragonroll, 8 Stk. Salmon Crunchy.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+          "categoryId": "haki-menu",
+          "categoryTitle": "Haki Menu"
+        },
+        {
+          "no": 207,
+          "name": "Nagasaki by Night",
+          "price": "65,90€",
+          "description": "Für 3 Personen. Ebi Teri, Crayfish Rose, Salmon Rose, Tuna Rose, Sashimi, Sake Avo Maki, Tekka Avo Maki, Haki Flameroll und Tuna Crunchy.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+          "categoryId": "haki-menu",
+          "categoryTitle": "Haki Menu"
+        },
+        {
+          "no": 208,
+          "name": "Kyoto by Night",
+          "price": "88,90€",
+          "description": "Für 4 Personen. Salmon Rose, Tuna Rose, Green Rose, Sashimi, Maki, Haki Dragonroll, Haki Flameroll, Chicken Crunchy und Sake I.O.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+          "categoryId": "haki-menu",
+          "categoryTitle": "Haki Menu"
+        }
+      ]
+    },
+    {
+      "id": "donburi",
+      "title": "Donburi",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+      "description": "Serviert mit Sushi-Reis, Sesamsoße, Salat, Seetang, Kimchi und verschiedenem Gemüse.",
+      "items": [
+        {
+          "no": 210,
+          "name": "Sake Don",
+          "price": "15,90€",
+          "description": "Lachs",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "donburi",
+          "categoryTitle": "Donburi"
+        },
+        {
+          "no": 211,
+          "name": "Tori Don",
+          "price": "13,90€",
+          "description": "Gebackenes Hähnchen",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "donburi",
+          "categoryTitle": "Donburi"
+        },
+        {
+          "no": 212,
+          "name": "Haki Don",
+          "price": "14,90€",
+          "description": "Mit verschiedenem gemischtem rohen Fisch, gehackt.",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "donburi",
+          "categoryTitle": "Donburi"
+        },
+        {
+          "no": 213,
+          "name": "Tofu Don",
+          "price": "12,90€",
+          "description": "Tofu",
+          "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+          "categoryId": "donburi",
+          "categoryTitle": "Donburi"
+        }
+      ]
+    }
+  ]
+}

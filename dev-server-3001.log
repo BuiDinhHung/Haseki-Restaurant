@@ -1,0 +1,17 @@
+
+> haseki-restaurant@1.0.0 dev
+> next dev --port 3001
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.1.179:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 6.2s (1473 modules)
+ GET / 200 in 7339ms
+ GET / 200 in 338ms
+ GET / 200 in 650ms
+ GET / 200 in 504ms
+ GET / 200 in 532ms

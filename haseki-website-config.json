@@ -1,0 +1,799 @@
+{
+  "codexBrief": {
+    "projectName": "Haseki Restaurant Website",
+    "goal": "Build a premium modern restaurant website for Haseki Restaurant, inspired by phocafe.co.uk, but with its own Japanese-Vietnamese identity.",
+    "importantInstruction": "Do not copy phocafe.co.uk exactly. Use it only as inspiration for warm colors, strong food photography, clean menu UX, mobile-first layout and friendly Asian restaurant feeling.",
+    "language": "German",
+    "techStack": {
+      "framework": "Next.js App Router",
+      "language": "TypeScript",
+      "styling": "Tailwind CSS",
+      "animation": "Framer Motion",
+      "icons": "Lucide React",
+      "image": "next/image",
+      "optional": [
+        "Swiper for sliders",
+        "Lightbox for gallery"
+      ]
+    },
+    "mainRequirements": [
+      "Create a beautiful responsive homepage.",
+      "Use warm Asian bistro design, not full black luxury design.",
+      "Use provided images only as representative images for menu categories.",
+      "Do not require one image per dish.",
+      "Use category tabs and search for menu.",
+      "Mobile experience must be excellent.",
+      "Use sticky bottom action buttons on mobile: Anrufen, Route, Speisekarte.",
+      "Optimize SEO and performance.",
+      "Use reusable components and clean code."
+    ]
+  },
+  "restaurant": {
+    "name": "Haseki Restaurant",
+    "cuisine": "Japanisch - Vietnamesische Küche",
+    "language": "de",
+    "currency": "EUR",
+    "address": "Waltersdorfer Straße 1A, 12526 Berlin",
+    "phones": [
+      "03063313477",
+      "+49 176 15636666"
+    ],
+    "openingHours": [
+      {
+        "days": "Mo. bis Fr.",
+        "time": "11:00 - 22:00"
+      },
+      {
+        "days": "Sa. & So.",
+        "time": "11:30 - 22:00"
+      }
+    ],
+    "cta": {
+      "call": "tel:03063313477",
+      "route": "https://www.google.com/maps/search/?api=1&query=Waltersdorfer%20Stra%C3%9Fe%201A%2C%2012526%20Berlin"
+    }
+  },
+  "design": {
+    "styleName": "Modern Asian Bistro",
+    "styleDescription": "Warm, friendly, visual, modern Japanese-Vietnamese restaurant style. Premium but not too dark or too formal.",
+    "inspiration": "Pho Cafe UK style: warm colors, large food images, friendly Vietnamese/Asian atmosphere, strong mobile UX.",
+    "avoid": [
+      "Do not use full black background on the whole website.",
+      "Do not make it look too corporate.",
+      "Do not make it too Michelin fine-dining.",
+      "Do not overload with too many animations."
+    ],
+    "colors": {
+      "background": "#F8F4EC",
+      "card": "#FFFDF8",
+      "primary": "#B87946",
+      "primaryDark": "#5A3824",
+      "accentRed": "#B8322A",
+      "green": "#3F7D3A",
+      "text": "#2B2B2B",
+      "muted": "#7A6A58"
+    },
+    "fonts": {
+      "heading": "Cormorant Garamond or Playfair Display",
+      "body": "Montserrat or Inter"
+    },
+    "effects": [
+      "Sticky navbar with blur background",
+      "Fade up on scroll",
+      "Image hover zoom",
+      "Card lift hover",
+      "Smooth scroll",
+      "Mobile menu slide-in",
+      "Gallery lightbox",
+      "Category tabs horizontal scroll on mobile"
+    ]
+  },
+  "siteStructure": [
+    {
+      "component": "Header",
+      "description": "Logo left, navigation links, reservation/call button, sticky with blur on scroll.",
+      "links": [
+        "Startseite",
+        "Über Uns",
+        "Speisekarte",
+        "Galerie",
+        "Kontakt"
+      ]
+    },
+    {
+      "component": "Hero",
+      "description": "Large hero section using sushi platter image. Warm overlay, large headline, two CTA buttons.",
+      "title": "Haseki Restaurant",
+      "subtitle": "Japanisch - Vietnamesische Küche in Berlin",
+      "text": "Frische Zutaten, warme Atmosphäre und authentischer Geschmack.",
+      "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+      "buttons": [
+        {
+          "label": "Speisekarte ansehen",
+          "href": "#speisekarte"
+        },
+        {
+          "label": "Jetzt anrufen",
+          "href": "tel:03063313477"
+        }
+      ]
+    },
+    {
+      "component": "About",
+      "title": "Willkommen bei Haseki",
+      "description": "Genießen Sie Sushi, Pho, Ramen, Bowls und asiatische Spezialitäten in einer warmen, modernen Atmosphäre in Berlin.",
+      "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg"
+    },
+    {
+      "component": "SignatureCategories",
+      "description": "Show 6 big cards for main food groups using representative images.",
+      "categories": [
+        "Sushi",
+        "Vietnamesisch Tradition",
+        "Jasminreis mit Soße",
+        "Vorspeisen",
+        "Carpaccio & Tataki",
+        "Getränke"
+      ]
+    },
+    {
+      "component": "MenuSection",
+      "description": "Menu with tabs, category filters and search. Use menuCategories below. Images are category representative only.",
+      "features": [
+        "Search dish",
+        "Filter by category",
+        "Badge for veggie/spicy/bestseller",
+        "Price display"
+      ]
+    },
+    {
+      "component": "Gallery",
+      "description": "Masonry image gallery with hover zoom and lightbox.",
+      "imagesSource": "demoImages"
+    },
+    {
+      "component": "ReservationCTA",
+      "title": "Lust auf frisches Sushi, Pho oder asiatische Spezialitäten?",
+      "buttons": [
+        {
+          "label": "Jetzt anrufen",
+          "href": "tel:03063313477"
+        },
+        {
+          "label": "Route anzeigen",
+          "href": "https://www.google.com/maps/search/?api=1&query=Waltersdorfer%20Stra%C3%9Fe%201A%2C%2012526%20Berlin"
+        }
+      ]
+    },
+    {
+      "component": "Contact",
+      "description": "Show address, phone, opening hours and Google Map embed."
+    },
+    {
+      "component": "Footer",
+      "description": "Logo, address, phone, opening hours, navigation links."
+    }
+  ],
+  "imageUsageRule": {
+    "folder": "public/images/demo/",
+    "instruction": "Keep the original WhatsApp image filenames. Do not rename the images. Put all images into public/images/demo/ and reference the exact paths below.",
+    "important": "Images are limited, so use them as category representative images only. Do not assign unique image to every menu item."
+  },
+  "demoImages": [
+    {
+      "id": "special-roll-01",
+      "title": "Haki Spezial Rolle",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+      "bestFor": [
+        "Haki Spezial Rolle",
+        "Crunchy Roll",
+        "Inside Out",
+        "Sushi Gallery"
+      ]
+    },
+    {
+      "id": "nigiri-mix-01",
+      "title": "Nigiri Mix",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "bestFor": [
+        "Nigiri",
+        "Sashimi",
+        "Japanisch Tradition",
+        "Sushi Gallery"
+      ]
+    },
+    {
+      "id": "suess-sauer-01",
+      "title": "Haseki Süß Sauer",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+      "bestFor": [
+        "Jasminreis mit Soße",
+        "Spezialitäten",
+        "Kinder"
+      ]
+    },
+    {
+      "id": "sushi-set-01",
+      "title": "Sushi Set",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+      "bestFor": [
+        "Hero",
+        "Sushi",
+        "Haki Menu",
+        "Gallery"
+      ]
+    },
+    {
+      "id": "sushi-set-02",
+      "title": "Sushi Mix Deluxe",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+      "bestFor": [
+        "Haki Menu",
+        "Sushi",
+        "Signature Dishes",
+        "Gallery"
+      ]
+    },
+    {
+      "id": "dragonroll-01",
+      "title": "Haki Dragonroll",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+      "bestFor": [
+        "Haki Spezial Rolle",
+        "Crunchy Roll",
+        "Inside Out"
+      ]
+    },
+    {
+      "id": "mien-xao-01",
+      "title": "Mien Xao",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+      "bestFor": [
+        "Vietnamesisch Tradition",
+        "Gebratene Nudeln",
+        "Donburi"
+      ]
+    },
+    {
+      "id": "sushi-set-03",
+      "title": "Sushi Mix",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.10.19.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.19.jpeg",
+      "bestFor": [
+        "Sushi",
+        "Haki Menu",
+        "Hero",
+        "Gallery"
+      ]
+    },
+    {
+      "id": "curry-01",
+      "title": "Haseki Curry",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "bestFor": [
+        "Jasminreis mit Soße",
+        "Japanisch Tradition",
+        "Spezialitäten",
+        "Kinder"
+      ]
+    },
+    {
+      "id": "nem-ha-noi-01",
+      "title": "Nem Ha Noi - Frühlingsrolle",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+      "bestFor": [
+        "Vorspeisen",
+        "Vietnamesisch Tradition"
+      ]
+    },
+    {
+      "id": "tuna-tataki-01",
+      "title": "Tuna Tataki",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "bestFor": [
+        "Carpaccio & Tataki",
+        "Sashimi",
+        "Salat"
+      ]
+    },
+    {
+      "id": "nem-chay-01",
+      "title": "Nem Chay - Mini Frühlingsrolle",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.11.25.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25.jpeg",
+      "bestFor": [
+        "Vorspeisen",
+        "Vegetarisch",
+        "Kinder"
+      ]
+    },
+    {
+      "id": "cocktails-01",
+      "title": "Cocktails",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.11.26.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.26.jpeg",
+      "bestFor": [
+        "Getränke",
+        "Cocktails",
+        "Gallery"
+      ]
+    },
+    {
+      "id": "limonade-01",
+      "title": "Hausgemachte Limonade",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.11.51 (1).jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.51 (1).jpeg",
+      "bestFor": [
+        "Getränke",
+        "Hausgemachte Limonaden"
+      ]
+    },
+    {
+      "id": "mojito-01",
+      "title": "Mojito",
+      "originalFileName": "WhatsApp Image 2026-06-08 at 14.11.51.jpeg",
+      "path": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.51.jpeg",
+      "bestFor": [
+        "Getränke",
+        "Cocktails"
+      ]
+    }
+  ],
+  "menuCategories": [
+    {
+      "id": "vorspeisen",
+      "title": "Vorspeisen",
+      "description": "Knusprige und frische Vorspeisen wie Frühlingsrollen, Gyoza, Edamame und Sommerrollen.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25.jpeg",
+      "items": [
+        {
+          "name": "Nem Ha Noi - Frühlingsrolle",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Nem Chay - Mini Frühlingsrolle",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Yakitori",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Gyoza",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Edamame",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Ebi Tempura",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Goi Cuon",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "suppen",
+      "title": "Suppen",
+      "description": "Warme asiatische Suppen mit Kräutern, Gemüse, Kokos, Miso oder Tom Yum Geschmack.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+      "items": [
+        {
+          "name": "Miso Suppe",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Tom Yum",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Tom Kha",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Sauer-Scharf Suppe",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "salat",
+      "title": "Salat",
+      "description": "Frische asiatische Salate mit Kräutern, Mango, Papaya, Glasnudeln oder Fisch.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+      "items": [
+        {
+          "name": "Nom Du Du",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Nom Xoai",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Nom Mien",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Seetang Salat",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "japanisch-tradition",
+      "title": "Japanisch Tradition",
+      "description": "Japanische Klassiker wie Ramen, Udon, Teriyaki und Curry.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "items": [
+        {
+          "name": "Ramen",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Udon",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Teriyaki",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Curry",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "vietnamesisch-tradition",
+      "title": "Vietnamesisch Tradition",
+      "description": "Pho, Bun, gebratene Nudeln und vietnamesische Spezialitäten.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+      "items": [
+        {
+          "name": "Pho Ha Noi",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Pho Curry",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Bun Cha",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Bun Bo Nam Bo",
+          "price": "",
+          "description": "Bitte Preis và genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Pho Xao",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Mien Xao",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Pad Thai",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "jasminreis-mit-sosse",
+      "title": "Jasminreis mit Soße",
+      "description": "Reisgerichte mit Curry, Mango, Erdnuss, Süß-Sauer und Chop Suey.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "items": [
+        {
+          "name": "Haseki Curry",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Haseki Mango",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Haseki Süß Sauer",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Haseki Chop Suey",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Haseki Erdnuss",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "spezialitaeten",
+      "title": "Spezialitäten",
+      "description": "Besondere Haseki-Gerichte und warme asiatische Spezialitäten.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "items": []
+    },
+    {
+      "id": "kinder",
+      "title": "Kinder",
+      "description": "Kindergerichte und kleine Portionen.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "items": []
+    },
+    {
+      "id": "haki-sushi-tapas",
+      "title": "Haki Sushi Tapas",
+      "description": "Kleine japanische und asiatische Tapas.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "items": []
+    },
+    {
+      "id": "nigiri",
+      "title": "Nigiri",
+      "description": "Klassische Nigiri mit Fisch, Meeresfrüchten und vegetarischen Varianten.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+      "items": [
+        {
+          "name": "Sake Nigiri",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Maguro Nigiri",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Ebi Nigiri",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Unagi Nigiri",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Avocado Nigiri",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "maki",
+      "title": "Maki",
+      "description": "Kleine Sushi-Rollen mit Fisch, Gemüse und weiteren Füllungen.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+      "items": [
+        {
+          "name": "Sake Maki",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Tekka Maki",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Ebi Maki",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Avocado Maki",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Kappa Maki",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "sashimi",
+      "title": "Sashimi",
+      "description": "Frische Fischscheiben ohne Reis.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "items": [
+        {
+          "name": "Sake Sashimi",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Maguro Sashimi",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Sashimi Mix",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "carpaccio-tataki",
+      "title": "Carpaccio & Tataki",
+      "description": "Fein geschnittene Fischgerichte und leicht angegrillte Tataki-Spezialitäten.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "items": [
+        {
+          "name": "Tuna Tataki",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Salmon Tataki",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Carpaccio",
+          "price": "",
+          "description": "Bitte Preis aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "crunchy-roll",
+      "title": "Crunchy Roll",
+      "description": "Knusprig gebackene Sushi-Rollen mit verschiedenen Füllungen.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+      "items": []
+    },
+    {
+      "id": "inside-out",
+      "title": "Inside Out",
+      "description": "Inside-Out Rolls mit Reis außen und verschiedenen Füllungen.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+      "items": []
+    },
+    {
+      "id": "haki-spezial-rolle",
+      "title": "Haki Spezial Rolle",
+      "description": "Besondere Haseki-Sushi-Rollen mit kreativen Kombinationen.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+      "items": [
+        {
+          "name": "Haki Dragonroll",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "haki-menu",
+      "title": "Haki Menu",
+      "description": "Sushi-Menüs und gemischte Platten.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.19.jpeg",
+      "items": [
+        {
+          "name": "Sushi Set",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Sushi Mix",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        },
+        {
+          "name": "Sushi Mix Deluxe",
+          "price": "",
+          "description": "Bitte Preis und genaue Beschreibung aus dem gedruckten Menü übernehmen."
+        }
+      ]
+    },
+    {
+      "id": "donburi",
+      "title": "Donburi",
+      "description": "Japanische Reisschalen mit Sushi-Reis, Salat, Gemüse und verschiedenen Toppings.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "items": []
+    },
+    {
+      "id": "getraenke",
+      "title": "Getränke",
+      "description": "Cocktails, hausgemachte Limonaden und frische Getränke.",
+      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.26.jpeg",
+      "fallbackImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.51 (1).jpeg",
+      "items": [
+        {
+          "name": "Cocktails",
+          "price": "",
+          "description": "Bitte Preis aus der Getränkekarte übernehmen."
+        },
+        {
+          "name": "Hausgemachte Limonade",
+          "price": "",
+          "description": "Bitte Preis aus der Getränkekarte übernehmen."
+        },
+        {
+          "name": "Mojito",
+          "price": "",
+          "description": "Bitte Preis aus der Getränkekarte übernehmen."
+        }
+      ]
+    }
+  ],
+  "developerNotes": {
+    "menuAccuracy": "The full printed menu contains more items and exact prices. This JSON provides the website structure, category mapping, image mapping and known dish/category names from the provided menu images. Exact prices/descriptions should be completed from the original menu source if needed.",
+    "recommendedImplementation": [
+      "Render menuCategories as tabs.",
+      "Render category representative image at top of each category section.",
+      "For items with missing price, hide price or show nothing until price is filled.",
+      "Use category fallback image if item image is missing.",
+      "Do not break the page if items array is empty; show the category card anyway."
+    ]
+  }
+}
