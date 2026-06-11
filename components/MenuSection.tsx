@@ -60,7 +60,7 @@ export function MenuSection() {
           </label>
         </div>
 
-        <div className="mx-auto mt-8 flex max-w-5xl gap-3 overflow-x-auto pb-3 lg:justify-center">
+        <div className="mx-auto mt-8 flex max-w-6xl gap-3 overflow-x-auto pb-3 lg:flex-wrap lg:justify-center lg:overflow-visible lg:pb-0">
           {menuCategories.map((category) => (
             <button
               key={category.id}
