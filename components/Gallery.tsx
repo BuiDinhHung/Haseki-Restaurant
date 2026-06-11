@@ -6,22 +6,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { galleryImages } from "@/lib/site-data";
 
-const layoutClasses = [
-  "sm:col-span-2 sm:row-span-2",
-  "",
-  "",
-  "",
-  "lg:col-span-2",
-  "",
-  "",
-  "sm:row-span-2",
-  "lg:col-span-2",
-  "",
-  "",
-  "sm:col-span-2",
-  ""
-];
-
 export function Gallery() {
   const [active, setActive] = useState<(typeof galleryImages)[number] | null>(null);
 
@@ -51,7 +35,7 @@ export function Gallery() {
           <h2 className="mt-3 font-heading text-3xl font-bold text-[#5A3824] sm:text-4xl">Viele kleine Momente, viel Geschmack</h2>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-6xl grid-flow-dense grid-cols-1 gap-4 sm:auto-rows-[220px] sm:grid-cols-2 lg:auto-rows-[230px] lg:grid-cols-4">
+        <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {galleryImages.map((image, index) => (
             <motion.button
               key={image.id}
@@ -61,18 +45,18 @@ export function Gallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.45, delay: Math.min(index * 0.035, 0.25), ease: "easeOut" }}
-              className={`focus-ring interactive-card shine-hover group relative flex min-h-[260px] flex-col overflow-hidden rounded-lg bg-[#FFFDF8] text-left shadow-sm ${layoutClasses[index % layoutClasses.length]}`}
+              className="focus-ring interactive-card shine-hover group relative flex h-[320px] flex-col overflow-hidden rounded-lg border border-[#5A3824]/10 bg-[#FFFDF8] text-left shadow-sm sm:h-[340px] lg:h-[360px]"
             >
-              <div className="relative min-h-0 flex-1 overflow-hidden bg-[#F8F4EC]">
+              <div className="relative h-[calc(100%-64px)] shrink-0 overflow-hidden bg-[#F8F4EC]">
                 <Image
                   src={image.path}
                   alt={image.title}
                   fill
-                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="image-lift object-cover"
                 />
               </div>
-              <div className="relative z-10 flex min-h-[58px] items-center border-t border-[#5A3824]/10 bg-[#FFFDF8] px-4 py-3">
+              <div className="relative z-10 flex h-16 shrink-0 items-center border-t border-[#5A3824]/10 bg-[#FFFDF8] px-4 py-3">
                 <span className="gallery-caption-text text-sm font-bold leading-5 text-[#5A3824]">
                   {image.title}
                 </span>
