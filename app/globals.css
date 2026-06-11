@@ -223,23 +223,6 @@ body > footer {
   transform: translateX(3px);
 }
 
-.hero-motion-frame::before {
-  position: absolute;
-  right: min(8vw, 110px);
-  top: min(16vh, 150px);
-  z-index: 3;
-  width: clamp(110px, 16vw, 230px);
-  aspect-ratio: 1;
-  pointer-events: none;
-  content: "";
-  border: 1px solid rgba(255, 253, 248, 0.24);
-  border-radius: 999px;
-  background:
-    radial-gradient(circle at 38% 34%, rgba(255, 253, 248, 0.2), transparent 28%),
-    radial-gradient(circle at 64% 70%, rgba(240, 195, 145, 0.22), transparent 35%);
-  animation: hero-flavor-pulse 7s ease-in-out infinite;
-}
-
 .menu-photo-image {
   transition:
     transform 620ms ease,
@@ -338,19 +321,6 @@ body > footer {
 
   to {
     transform: translateX(-50%);
-  }
-}
-
-@keyframes hero-flavor-pulse {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(0.96);
-    opacity: 0.34;
-  }
-
-  50% {
-    transform: translate3d(-10px, 8px, 0) scale(1.04);
-    opacity: 0.62;
   }
 }
 
