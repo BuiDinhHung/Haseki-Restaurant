@@ -5,7 +5,6 @@ import { ArrowRight, Phone } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { heroSlides, restaurant } from "@/lib/site-data";
-import { IngredientBubbles, SauceSwipe } from "@/components/RestaurantAnimations";
 
 export function HeroSlider() {
   const [active, setActive] = useState(0);
@@ -45,7 +44,6 @@ export function HeroSlider() {
 
         <div className="absolute inset-0 bg-gradient-to-b from-[#5A3824]/18 via-[#5A3824]/36 to-[#5A3824]/78" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#5A3824]/78 via-[#5A3824]/24 to-transparent" />
-        <IngredientBubbles className="absolute right-10 top-32 z-10 hidden xl:block" />
 
         <div className="absolute bottom-7 left-5 right-5 sm:bottom-12 sm:left-12">
           <motion.div
@@ -74,9 +72,6 @@ export function HeroSlider() {
                 <Phone size={18} />
                 Jetzt anrufen
               </a>
-            </div>
-            <div className="relative mt-6 hidden h-2 w-48 sm:block">
-              <SauceSwipe className="inset-x-0 top-0" />
             </div>
           </motion.div>
         </div>

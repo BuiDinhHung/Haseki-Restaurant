@@ -1,6 +1,5 @@
 import { ArrowRight, MapPin, Phone } from "lucide-react";
 import { FadeUp } from "@/components/Motion";
-import { SauceSwipe } from "@/components/RestaurantAnimations";
 import { restaurant } from "@/lib/site-data";
 
 const cards = [
@@ -31,11 +30,8 @@ export function HomeTiles() {
 
           return (
             <FadeUp key={card.title} delay={index * 0.08}>
-              <article className="interactive-card relative flex min-h-[280px] flex-col items-center justify-center overflow-hidden rounded-[28px] bg-[#5A3824] px-6 py-10 text-center shadow-xl shadow-[#5A3824]/18 sm:min-h-[340px] sm:px-10">
+              <article className="interactive-card flex min-h-[280px] flex-col items-center justify-center rounded-[28px] bg-[#5A3824] px-6 py-10 text-center shadow-xl shadow-[#5A3824]/18 sm:min-h-[340px] sm:px-10">
                 <h2 className="text-4xl font-black leading-none sm:text-5xl">{card.title}</h2>
-                <div className="relative mt-5 h-2 w-32">
-                  <SauceSwipe className="inset-x-0 top-0 bg-[#F0C391]" />
-                </div>
                 <p className="mt-7 max-w-md text-lg font-semibold leading-8 text-[#FFFDF8]/92">{card.text}</p>
                 <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
                   <a

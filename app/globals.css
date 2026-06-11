@@ -215,25 +215,6 @@ body > footer {
   box-shadow: 0 14px 28px rgba(43, 43, 43, 0.18);
 }
 
-.button-pop svg {
-  transition: transform 220ms ease;
-}
-
-.button-pop:hover svg {
-  transform: translateX(3px) rotate(-4deg);
-}
-
-.menu-image-main {
-  transition:
-    transform 620ms ease,
-    filter 620ms ease;
-}
-
-.menu-image-stage:hover .menu-image-main {
-  transform: scale(1.035);
-  filter: saturate(1.08) contrast(1.02);
-}
-
 .balanced-heading {
   max-width: 760px;
   margin-inline: auto;
