@@ -227,7 +227,6 @@ export const contactImage = ambientImages[0];
 export const reservationImage = ambientImages[4];
 
 export const galleryImages: SiteImage[] = [
-  ambientImages[0],
   foodImages.find((image) => image.title.includes("Sushi Set")) ?? foodImages[3],
   ambientImages[1],
   foodImages.find((image) => image.title.includes("Mien Xao")) ?? foodImages[6],
