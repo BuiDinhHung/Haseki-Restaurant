@@ -2,9 +2,7 @@
 import { Clock, MapPin, Navigation, Phone } from "lucide-react";
 import { contactImage, restaurant } from "@/lib/site-data";
 
-const osmMapSrc =
-  "https://www.openstreetmap.org/export/embed.html?bbox=13.5682529%2C52.4019612%2C13.5782529%2C52.4079612&layer=mapnik&marker=52.4049612%2C13.5732529";
-const osmMapHref = "https://www.openstreetmap.org/?mlat=52.4049612&mlon=13.5732529#map=17/52.4049612/13.5732529";
+const googleMapSrc = "https://www.google.com/maps?q=52.4049612,13.5732529&z=16&hl=de&output=embed";
 
 export function Contact() {
   return (
@@ -55,9 +53,10 @@ export function Contact() {
         <div className="overflow-hidden rounded-lg bg-[#FFFDF8] shadow-sm">
           <div className="h-[420px] bg-[#F8F4EC] sm:h-[520px]">
             <iframe
-              title="OpenStreetMap Haseki Restaurant"
-              src={osmMapSrc}
+              title="Google Map Haseki Restaurant"
+              src={googleMapSrc}
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
               className="h-full w-full border-0"
             />
           </div>
@@ -80,12 +79,12 @@ export function Contact() {
             </a>
           </div>
           <a
-            href={osmMapHref}
+            href={restaurant.routeHref}
             target="_blank"
             rel="noreferrer"
             className="block px-5 pb-5 text-center text-xs font-semibold text-[#7A6A58] hover:text-[#B8322A]"
           >
-            Karte größer auf OpenStreetMap ansehen
+            Karte größer auf Google Maps ansehen
           </a>
         </div>
       </div>
