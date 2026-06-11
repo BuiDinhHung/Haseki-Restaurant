@@ -240,6 +240,10 @@ body > footer {
   -webkit-line-clamp: 2;
 }
 
+.hero-slide-image {
+  transition: transform 900ms ease, filter 900ms ease;
+}
+
 .marquee-track {
   animation: marquee 22s linear infinite;
 }
@@ -278,6 +282,13 @@ body > footer {
 
   .site-main > section:not(:first-child)::before {
     width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 639px) {
+  .hero-slide-food {
+    transform: translateY(-10%) scale(1.18);
+    transform-origin: center center;
   }
 }
 

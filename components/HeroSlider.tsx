@@ -35,7 +35,9 @@ export function HeroSlider() {
               fill
               priority={active === 0}
               sizes="100vw"
-              className="object-cover object-center"
+              className={`hero-slide-image object-cover object-center ${
+                heroSlides[active].kind === "food" ? "hero-slide-food" : ""
+              }`}
             />
           </motion.div>
         </AnimatePresence>
