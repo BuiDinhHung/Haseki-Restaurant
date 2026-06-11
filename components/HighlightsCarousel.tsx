@@ -35,20 +35,20 @@ export function HighlightsCarousel() {
         </FadeUp>
 
         <FadeUp delay={0.1} className="relative mx-auto w-full max-w-[440px]">
-          <div className="absolute left-1/2 top-[58%] h-[250px] w-[250px] -translate-x-1/2 rounded-full bg-[#86715F]/34 blur-[1px] sm:h-[320px] sm:w-[320px]" />
+          <div className="absolute left-1/2 top-[60%] h-[250px] w-[250px] -translate-x-1/2 rounded-full bg-[#86715F]/34 blur-[1px] sm:h-[320px] sm:w-[320px]" />
           <motion.div
             initial={{ opacity: 0, rotate: -75, scale: 0.84 }}
             whileInView={{ opacity: 1, rotate: 360, scale: 1 }}
             viewport={{ once: false, amount: 0.45 }}
             transition={{ duration: 1.25, ease: "easeOut" }}
-            className="relative mx-auto aspect-square w-[min(82vw,420px)] overflow-hidden rounded-full bg-[#FFFDF8] shadow-2xl shadow-[#5A3824]/15"
+            className="relative mx-auto aspect-square w-[min(86vw,460px)] overflow-hidden rounded-full bg-[#FFFDF8] shadow-2xl shadow-[#5A3824]/15 ring-8 ring-[#FFFDF8]"
           >
             <Image
               src={bowlImage.path}
               alt={bowlImage.title}
               fill
-              sizes="(min-width: 1024px) 420px, 82vw"
-              className="object-contain p-5"
+              sizes="(min-width: 1024px) 460px, 86vw"
+              className="scale-[1.22] object-cover object-[50%_48%]"
             />
           </motion.div>
         </FadeUp>
