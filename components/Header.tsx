@@ -37,6 +37,8 @@ export function Header() {
             <a
               key={label}
               href={href}
+              target={href.startsWith("http") ? "_blank" : undefined}
+              rel={href.startsWith("http") ? "noreferrer" : undefined}
               className="focus-ring text-sm font-black text-[#FFFDF8] transition hover:text-[#F0C391]"
             >
               {label}
@@ -44,6 +46,8 @@ export function Header() {
           ))}
           <a
             href={restaurant.routeHref}
+            target="_blank"
+            rel="noreferrer"
             className="focus-ring button-pop rounded-full border border-[#F0C391] px-5 py-2.5 text-sm font-black text-[#FFFDF8]"
           >
             Haseki To Go
@@ -106,6 +110,8 @@ export function Header() {
               <a
                 key={label}
                 href={href}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noreferrer" : undefined}
                 onClick={() => setOpen(false)}
                 className="flex items-center justify-between border-b border-white/10 px-4 py-4 text-base font-black last:border-b-0"
               >
@@ -120,7 +126,12 @@ export function Header() {
               <Phone size={16} />
               Anrufen
             </a>
-            <a href={restaurant.routeHref} className="button-pop inline-flex items-center justify-center gap-2 rounded-full border border-[#F0C391] px-4 py-3 text-center text-sm font-black text-white">
+            <a
+              href={restaurant.routeHref}
+              target="_blank"
+              rel="noreferrer"
+              className="button-pop inline-flex items-center justify-center gap-2 rounded-full border border-[#F0C391] px-4 py-3 text-center text-sm font-black text-white"
+            >
               <MapPin size={16} />
               Route
             </a>

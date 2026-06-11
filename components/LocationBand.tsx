@@ -22,6 +22,8 @@ export function LocationBand() {
             <div className="flex gap-2">
               <a
                 href={restaurant.routeHref}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[#B8322A] px-5 py-3 text-sm font-bold text-white"
               >
                 <Navigation size={17} />

@@ -8,7 +8,12 @@ export function MobileStickyActions() {
         <Phone size={15} />
         <span className="truncate">Anrufen</span>
       </a>
-      <a href={restaurant.routeHref} className="flex min-w-0 items-center justify-center gap-1 rounded-full py-3 text-[11px] font-bold text-[#5A3824]">
+      <a
+        href={restaurant.routeHref}
+        target="_blank"
+        rel="noreferrer"
+        className="flex min-w-0 items-center justify-center gap-1 rounded-full py-3 text-[11px] font-bold text-[#5A3824]"
+      >
         <MapPin size={15} />
         <span className="truncate">Route</span>
       </a>

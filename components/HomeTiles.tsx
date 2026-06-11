@@ -44,6 +44,8 @@ export function HomeTiles() {
                   {card.secondaryHref ? (
                     <a
                       href={card.secondaryHref}
+                      target="_blank"
+                      rel="noreferrer"
                       className="button-pop inline-flex items-center justify-center gap-2 rounded-full border border-[#F0C391]/75 px-7 py-4 text-base font-black text-[#FFFDF8]"
                     >
                       {card.secondaryLabel}

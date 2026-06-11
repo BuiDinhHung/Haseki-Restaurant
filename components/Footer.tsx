@@ -37,7 +37,12 @@ export function Footer() {
               <Phone size={17} />
               Anrufen
             </a>
-            <a href={restaurant.routeHref} className="button-pop inline-flex items-center justify-center gap-2 rounded-full bg-[#FFFDF8] px-5 py-3 text-sm font-black text-[#5A3824]">
+            <a
+              href={restaurant.routeHref}
+              target="_blank"
+              rel="noreferrer"
+              className="button-pop inline-flex items-center justify-center gap-2 rounded-full bg-[#FFFDF8] px-5 py-3 text-sm font-black text-[#5A3824]"
+            >
               <MapPin size={17} />
               Route
             </a>

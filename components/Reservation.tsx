@@ -25,7 +25,12 @@ export function ReservationCTA() {
             <Phone size={18} />
             Jetzt anrufen
           </a>
-          <a href={restaurant.routeHref} className="button-pop inline-flex items-center justify-center gap-2 rounded-full bg-[#FFFDF8] px-6 py-4 font-bold text-[#5A3824]">
+          <a
+            href={restaurant.routeHref}
+            target="_blank"
+            rel="noreferrer"
+            className="button-pop inline-flex items-center justify-center gap-2 rounded-full bg-[#FFFDF8] px-6 py-4 font-bold text-[#5A3824]"
+          >
             <MapPin size={18} />
             Route anzeigen
           </a>
