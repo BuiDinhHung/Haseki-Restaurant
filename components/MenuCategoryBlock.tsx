@@ -1,6 +1,17 @@
 ﻿import Image from "next/image";
 import type { MenuCategory, MenuItem as MenuItemType } from "@/lib/site-data";
 import { MenuItem } from "@/components/MenuItem";
+import { ChopstickAccent, SteamWisps } from "@/components/RestaurantAnimations";
+
+const warmCategoryIds = new Set([
+  "suppen",
+  "japanisch-tradition",
+  "vietnamesisch-tradition",
+  "jasminreis-mit-sosse",
+  "spezialitaeten",
+  "kinder-beilagen",
+  "donburi"
+]);
 
 export function MenuCategoryBlock({
   category,
@@ -9,11 +20,23 @@ export function MenuCategoryBlock({
   category: MenuCategory;
   items?: MenuItemType[];
 }) {
+  const isWarmCategory = warmCategoryIds.has(category.id);
+  const isDrinkCategory = category.id === "getraenke";
+  const categoryBadge = isDrinkCategory ? "Frisch gemixt" : isWarmCategory ? "Warm serviert" : "Handgemacht";
+
   return (
     <article id={category.id} className="overflow-hidden rounded-lg border border-[#5A3824]/10 bg-[#FFFDF8] shadow-sm">
       <div className="grid lg:grid-cols-[minmax(320px,430px)_1fr]">
         <div className="bg-[#F8F4EC] p-4 sm:p-6">
-          <div className="relative h-[280px] overflow-hidden rounded-md border border-[#5A3824]/10 bg-[#F2E7D7] sm:h-[360px] lg:sticky lg:top-28">
+          <div className="menu-image-stage relative h-[280px] overflow-hidden rounded-md border border-[#5A3824]/10 bg-[#F2E7D7] sm:h-[360px] lg:sticky lg:top-28">
+            {isWarmCategory ? (
+              <SteamWisps className="absolute right-4 top-3 z-20 opacity-90" />
+            ) : !isDrinkCategory ? (
+              <ChopstickAccent className="-right-8 top-6 z-20 opacity-90" />
+            ) : null}
+            <span className="absolute left-4 top-4 z-20 rounded-full bg-[#FFFDF8]/92 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-[#5A3824] shadow-lg shadow-[#5A3824]/10 backdrop-blur">
+              {categoryBadge}
+            </span>
             <Image
               src={category.representativeImage}
               alt=""
@@ -27,7 +50,7 @@ export function MenuCategoryBlock({
               alt={category.title}
               fill
               sizes="(min-width: 1024px) 430px, 100vw"
-              className="object-contain p-3 sm:p-5"
+              className="menu-image-main object-contain p-3 sm:p-5"
             />
           </div>
         </div>
