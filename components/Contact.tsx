@@ -2,6 +2,10 @@
 import { Clock, MapPin, Navigation, Phone } from "lucide-react";
 import { contactImage, restaurant } from "@/lib/site-data";
 
+const osmMapSrc =
+  "https://www.openstreetmap.org/export/embed.html?bbox=13.5682529%2C52.4019612%2C13.5782529%2C52.4079612&layer=mapnik&marker=52.4049612%2C13.5732529";
+const osmMapHref = "https://www.openstreetmap.org/?mlat=52.4049612&mlon=13.5732529#map=17/52.4049612/13.5732529";
+
 export function Contact() {
   return (
     <section id="kontakt" className="py-20 sm:py-24">
@@ -48,24 +52,16 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="hidden min-h-[520px] flex-col justify-between rounded-lg bg-[#FFFDF8] p-6 shadow-sm sm:p-8 lg:flex">
-          <MapPin className="mb-4 text-[#B8322A]" size={30} />
-          <div>
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#B8322A]">Google Maps</p>
-            <h3 className="mt-3 font-heading text-3xl font-bold text-[#5A3824] sm:text-4xl">
-              Route zu Haseki öffnen
-            </h3>
-            <p className="mt-4 text-lg font-semibold leading-8 text-[#5A3824]">
-              Waltersdorfer Straße 1A
-              <br />
-              12526 Berlin
-            </p>
-            <p className="mt-5 leading-7 text-[#7A6A58]">
-              Die Karte wird direkt in Google Maps geöffnet. Das funktioniert zuverlässiger, wenn diese
-              Website in Webcake oder einem mobilen In-App-Browser eingebettet ist.
-            </p>
+        <div className="overflow-hidden rounded-lg bg-[#FFFDF8] shadow-sm">
+          <div className="h-[420px] bg-[#F8F4EC] sm:h-[520px]">
+            <iframe
+              title="OpenStreetMap Haseki Restaurant"
+              src={osmMapSrc}
+              loading="lazy"
+              className="h-full w-full border-0"
+            />
           </div>
-          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+          <div className="grid gap-3 border-t border-[#5A3824]/10 p-5 sm:grid-cols-2">
             <a
               href={restaurant.routeHref}
               target="_blank"
@@ -83,6 +79,14 @@ export function Contact() {
               Anrufen
             </a>
           </div>
+          <a
+            href={osmMapHref}
+            target="_blank"
+            rel="noreferrer"
+            className="block px-5 pb-5 text-center text-xs font-semibold text-[#7A6A58] hover:text-[#B8322A]"
+          >
+            Karte größer auf OpenStreetMap ansehen
+          </a>
         </div>
       </div>
     </section>
