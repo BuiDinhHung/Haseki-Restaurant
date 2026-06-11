@@ -1097,7 +1097,7 @@
     {
       "id": "haki-sushi-tapas",
       "title": "Haki Sushi Tapas 2 Stk.",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "representativeImage": "/images/menu/sushi-tapas-roll.jpg",
       "items": [
         {
           "no": 100,
@@ -1158,7 +1158,7 @@
     {
       "id": "haki-nigiri",
       "title": "Haki Nigiri 2 Stk.",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.33.jpeg",
+      "representativeImage": "/images/menu/sushi-nigiri.jpg",
       "items": [
         {
           "no": 110,
@@ -1255,7 +1255,7 @@
     {
       "id": "maki",
       "title": "Maki 6 Stk.",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.51.jpeg",
+      "representativeImage": "/images/menu/sushi-maki-set.jpg",
       "items": [
         {
           "no": 120,
@@ -1388,7 +1388,7 @@
     {
       "id": "sashimi",
       "title": "Sashimi",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "representativeImage": "/images/menu/sushi-sashimi-tuna.jpg",
       "items": [
         {
           "no": 140,
@@ -1431,7 +1431,7 @@
     {
       "id": "carpaccio-tataki",
       "title": "Carpaccio & Tataki",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "representativeImage": "/images/menu/sushi-carpaccio-tataki.jpg",
       "description": "Serviert mit Salat und Ponzusoße, garniert mit Bonitoflocken, Tobiko und Sesam.",
       "items": [
         {
@@ -1484,7 +1484,7 @@
     {
       "id": "haki-crunchy",
       "title": "Haki Crunchy 8 Stk.",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+      "representativeImage": "/images/menu/sushi-crunchy-roll.jpg",
       "items": [
         {
           "no": 160,
@@ -1557,7 +1557,7 @@
     {
       "id": "inside-out",
       "title": "Inside Out 8 Stk.",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.25.jpeg",
+      "representativeImage": "/images/menu/sushi-inside-out.jpg",
       "items": [
         {
           "no": 170,
@@ -1681,7 +1681,7 @@
     {
       "id": "haki-spezial-rolle",
       "title": "Haki Spezial Rolle 4 Stk. oder 8 Stk.",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.04.jpeg",
+      "representativeImage": "/images/menu/sushi-haki-spezial-rolle.jpg",
       "items": [
         {
           "no": 182,
@@ -1814,7 +1814,7 @@
     {
       "id": "haki-menu",
       "title": "Haki Menu",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.58.jpeg",
+      "representativeImage": "/images/menu/sushi-haki-menu.jpg",
       "items": [
         {
           "no": 200,
