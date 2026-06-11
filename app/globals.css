@@ -215,6 +215,85 @@ body > footer {
   box-shadow: 0 14px 28px rgba(43, 43, 43, 0.18);
 }
 
+.button-pop svg {
+  transition: transform 220ms ease;
+}
+
+.button-pop:hover svg {
+  transform: translateX(3px);
+}
+
+.hero-motion-frame::before {
+  position: absolute;
+  right: min(8vw, 110px);
+  top: min(16vh, 150px);
+  z-index: 3;
+  width: clamp(110px, 16vw, 230px);
+  aspect-ratio: 1;
+  pointer-events: none;
+  content: "";
+  border: 1px solid rgba(255, 253, 248, 0.24);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 38% 34%, rgba(255, 253, 248, 0.2), transparent 28%),
+    radial-gradient(circle at 64% 70%, rgba(240, 195, 145, 0.22), transparent 35%);
+  animation: hero-flavor-pulse 7s ease-in-out infinite;
+}
+
+.menu-photo-image {
+  transition:
+    transform 620ms ease,
+    filter 620ms ease;
+}
+
+.menu-photo-motion:hover .menu-photo-image {
+  transform: scale(1.035);
+  filter: saturate(1.08) contrast(1.02);
+}
+
+.menu-photo-motion::after {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 3;
+  width: 56px;
+  height: 68px;
+  pointer-events: none;
+  content: "";
+  opacity: 0.58;
+  background:
+    radial-gradient(ellipse at 50% 100%, transparent 36%, rgba(255, 253, 248, 0.82) 38% 42%, transparent 45%),
+    radial-gradient(ellipse at 26% 100%, transparent 32%, rgba(255, 253, 248, 0.72) 35% 39%, transparent 43%),
+    radial-gradient(ellipse at 74% 100%, transparent 32%, rgba(255, 253, 248, 0.72) 35% 39%, transparent 43%);
+  animation: menu-steam 3.2s ease-in-out infinite;
+}
+
+.cta-motion-card,
+.reservation-motion-panel {
+  isolation: isolate;
+}
+
+.cta-motion-card::before,
+.reservation-motion-panel::before {
+  position: absolute;
+  inset: auto 10% 22px 10%;
+  height: 3px;
+  pointer-events: none;
+  content: "";
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(240, 195, 145, 0.84), transparent);
+  transform-origin: left;
+  animation: sauce-sweep 4.8s ease-in-out infinite;
+}
+
+.cta-motion-card::before {
+  z-index: 0;
+}
+
+.reservation-motion-panel::before {
+  z-index: 1;
+}
+
 .balanced-heading {
   max-width: 760px;
   margin-inline: auto;
@@ -259,6 +338,45 @@ body > footer {
 
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes hero-flavor-pulse {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(0.96);
+    opacity: 0.34;
+  }
+
+  50% {
+    transform: translate3d(-10px, 8px, 0) scale(1.04);
+    opacity: 0.62;
+  }
+}
+
+@keyframes menu-steam {
+  0%,
+  100% {
+    transform: translateY(8px);
+    opacity: 0.24;
+  }
+
+  50% {
+    transform: translateY(-6px);
+    opacity: 0.62;
+  }
+}
+
+@keyframes sauce-sweep {
+  0%,
+  100% {
+    transform: scaleX(0.32);
+    opacity: 0.34;
+  }
+
+  50% {
+    transform: scaleX(1);
+    opacity: 0.9;
   }
 }
 

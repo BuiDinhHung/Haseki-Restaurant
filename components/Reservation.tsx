@@ -5,7 +5,7 @@ import { reservationImage, restaurant } from "@/lib/site-data";
 export function ReservationCTA() {
   return (
     <section className="py-16">
-      <div className="section-shell relative max-w-6xl overflow-hidden rounded-lg px-6 py-12 text-white shadow-xl shadow-[#5A3824]/15 sm:px-10 lg:flex lg:items-center lg:justify-between">
+      <div className="reservation-motion-panel section-shell relative max-w-6xl overflow-hidden rounded-lg px-6 py-12 text-white shadow-xl shadow-[#5A3824]/15 sm:px-10 lg:flex lg:items-center lg:justify-between">
         <Image
           src={reservationImage.path}
           alt={reservationImage.title}
@@ -21,11 +21,11 @@ export function ReservationCTA() {
           </h2>
         </div>
         <div className="relative mt-8 flex flex-col gap-3 sm:flex-row lg:mt-0">
-          <a href={restaurant.callHref} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#B8322A] px-6 py-4 font-bold">
+          <a href={restaurant.callHref} className="button-pop inline-flex items-center justify-center gap-2 rounded-full bg-[#B8322A] px-6 py-4 font-bold">
             <Phone size={18} />
             Jetzt anrufen
           </a>
-          <a href={restaurant.routeHref} className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FFFDF8] px-6 py-4 font-bold text-[#5A3824]">
+          <a href={restaurant.routeHref} className="button-pop inline-flex items-center justify-center gap-2 rounded-full bg-[#FFFDF8] px-6 py-4 font-bold text-[#5A3824]">
             <MapPin size={18} />
             Route anzeigen
           </a>

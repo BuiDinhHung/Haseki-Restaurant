@@ -13,7 +13,7 @@ export function MenuCategoryBlock({
     <article id={category.id} className="overflow-hidden rounded-lg border border-[#5A3824]/10 bg-[#FFFDF8] shadow-sm">
       <div className="grid lg:grid-cols-[minmax(320px,430px)_1fr]">
         <div className="bg-[#F8F4EC] p-4 sm:p-6">
-          <div className="relative h-[280px] overflow-hidden rounded-md border border-[#5A3824]/10 bg-[#F2E7D7] sm:h-[360px] lg:sticky lg:top-28">
+          <div className="menu-photo-motion relative h-[280px] overflow-hidden rounded-md border border-[#5A3824]/10 bg-[#F2E7D7] sm:h-[360px] lg:sticky lg:top-28">
             <Image
               src={category.representativeImage}
               alt=""
@@ -27,7 +27,7 @@ export function MenuCategoryBlock({
               alt={category.title}
               fill
               sizes="(min-width: 1024px) 430px, 100vw"
-              className="object-contain p-3 sm:p-5"
+              className="menu-photo-image object-contain p-3 sm:p-5"
             />
           </div>
         </div>

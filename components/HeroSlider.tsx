@@ -19,7 +19,7 @@ export function HeroSlider() {
 
   return (
     <section id="start" className="relative overflow-hidden bg-[#B87946] px-3 pb-12 pt-28 sm:px-5 sm:pb-20 sm:pt-32">
-      <div className="relative mx-auto h-[calc(100vh-150px)] min-h-[560px] max-w-[1960px] overflow-hidden rounded-[28px] bg-[#5A3824] shadow-2xl shadow-[#5A3824]/25 sm:rounded-[34px]">
+      <div className="hero-motion-frame relative mx-auto h-[calc(100vh-150px)] min-h-[560px] max-w-[1960px] overflow-hidden rounded-[28px] bg-[#5A3824] shadow-2xl shadow-[#5A3824]/25 sm:rounded-[34px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={heroSlides[active].id}
