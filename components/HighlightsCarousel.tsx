@@ -7,8 +7,8 @@ import { FadeUp } from "@/components/Motion";
 import { foodImages } from "@/lib/site-data";
 
 const bowlImage =
-  foodImages.find((image) => image.title.includes("Haseki Curry")) ??
-  foodImages.find((image) => image.title.includes("Mien Xao")) ??
+  foodImages.find((image) => image.title.includes("Sushi Mix Deluxe")) ??
+  foodImages.find((image) => image.title.includes("Sushi Set")) ??
   foodImages[0];
 
 export function HighlightsCarousel() {
@@ -48,7 +48,7 @@ export function HighlightsCarousel() {
               alt={bowlImage.title}
               fill
               sizes="(min-width: 1024px) 460px, 86vw"
-              className="scale-[1.22] object-cover object-[50%_48%]"
+              className="scale-[1.18] object-cover object-[46%_56%]"
             />
           </motion.div>
         </FadeUp>
