@@ -104,7 +104,7 @@
     {
       "id": "vorspeisen",
       "title": "Vorspeisen",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (1).jpeg",
+      "representativeImage": "/images/menu/vorspeisen-fruehlingsrollen.jpg",
       "items": [
         {
           "no": 1,
@@ -189,7 +189,7 @@
     {
       "id": "suppen",
       "title": "Suppen",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "representativeImage": "/images/menu/suppen-tom-yum.jpg",
       "items": [
         {
           "no": 8,
@@ -288,7 +288,7 @@
     {
       "id": "salat",
       "title": "Salat",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25 (2).jpeg",
+      "representativeImage": "/images/menu/salat-papaya.jpg",
       "items": [
         {
           "no": 12,
@@ -331,7 +331,7 @@
     {
       "id": "japanisch-tradition",
       "title": "Japanisch Tradition",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "representativeImage": "/images/menu/japanisch-nudelsuppe.jpg",
       "items": [
         {
           "no": 17,
@@ -365,7 +365,7 @@
     {
       "id": "vietnamesisch-tradition",
       "title": "Vietnamesisch Tradition",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+      "representativeImage": "/images/menu/vietnamesisch-pho.jpg",
       "items": [
         {
           "no": 20,
@@ -624,7 +624,7 @@
     {
       "id": "jasminreis-mit-sosse",
       "title": "Jasminreis mit Soße",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.09.39.jpeg",
+      "representativeImage": "/images/menu/jasminreis-curry-haehnchen.jpg",
       "items": [
         {
           "no": 30,
@@ -961,7 +961,7 @@
     {
       "id": "spezialitaeten",
       "title": "Spezialitäten",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.28.jpeg",
+      "representativeImage": "/images/menu/spezialitaeten-luc-lac.jpg",
       "items": [
         {
           "no": 40,
@@ -1034,7 +1034,7 @@
     {
       "id": "kinder-beilagen",
       "title": "Kinder & Beilagen",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.11.25.jpeg",
+      "representativeImage": "/images/menu/kinder-pommes-chicken.jpg",
       "items": [
         {
           "no": 50,
@@ -1905,7 +1905,7 @@
     {
       "id": "donburi",
       "title": "Donburi",
-      "representativeImage": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
+      "representativeImage": "/images/menu/donburi-reis-bowl.jpg",
       "description": "Serviert mit Sushi-Reis, Sesamsoße, Salat, Seetang, Kimchi und verschiedenem Gemüse.",
       "items": [
         {
@@ -1943,6 +1943,30 @@
           "image": "/images/demo/WhatsApp Image 2026-06-08 at 14.10.12.jpeg",
           "categoryId": "donburi",
           "categoryTitle": "Donburi"
+        }
+      ]
+    },
+    {
+      "id": "getraenke",
+      "title": "Getränke",
+      "description": "Cocktails, hausgemachte Limonaden, Eistee, Kaffee, Bier und frische Getränke.",
+      "representativeImage": "/images/menu/getraenke-cocktail.jpg",
+      "items": [
+        {
+          "name": "Cocktails",
+          "description": "Auswahl an hausgemachten Cocktails und Aperitifs."
+        },
+        {
+          "name": "Hausgemachte Limonaden & Eistee",
+          "description": "Frische Limonaden, Eistee und vietnamesische Tee-Spezialitäten."
+        },
+        {
+          "name": "Kaffee & vietnamesischer Kaffee",
+          "description": "Kaffeevariationen wie Cà Phê Sữa Đá und warme Getränke."
+        },
+        {
+          "name": "Softdrinks, Saft & Bier",
+          "description": "Klassische Softdrinks, Säfte, Bier und alkoholfreie Begleiter."
         }
       ]
     }
