@@ -48,7 +48,7 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="flex min-h-[520px] flex-col justify-between rounded-lg bg-[#FFFDF8] p-6 shadow-sm sm:p-8">
+        <div className="hidden min-h-[520px] flex-col justify-between rounded-lg bg-[#FFFDF8] p-6 shadow-sm sm:p-8 lg:flex">
           <MapPin className="mb-4 text-[#B8322A]" size={30} />
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#B8322A]">Google Maps</p>
