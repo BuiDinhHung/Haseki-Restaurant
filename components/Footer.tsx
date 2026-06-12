@@ -93,7 +93,7 @@ export function Footer() {
               </a>
             ))}
           </div>
-          <p>© {new Date().getFullYear()} Haseki Restaurant. Alle Rechte vorbehalten.</p>
+          <p>Copyright © 2026 Hoangcaster</p>
         </div>
       </div>
     </footer>
