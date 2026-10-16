@@ -12,8 +12,10 @@
     "cuisine": "Japanisch - Vietnamesische Küche",
     "address": "Waltersdorfer Straße 1A, 12526 Berlin",
     "phones": [
-      "03063313477"
+      "03063313477",
+      "0176 15636666"
     ],
+    "email": "hasekirestaurant@gmail.com",
     "openingHours": [
       {
         "days": "Mo. bis Fr.",

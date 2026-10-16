@@ -53,6 +53,16 @@ export function Footer() {
           <div>
             <p className="font-black uppercase">Adresse</p>
             <p className="mt-3 text-sm leading-6 text-white/70">{restaurant.address}</p>
+            <div className="mt-3 grid gap-1 text-sm text-white/70">
+              {restaurant.phones.map((phone) => (
+                <a key={phone} href={`tel:${phone.replaceAll(" ", "")}`} className="hover:text-white">
+                  Tel. {phone}
+                </a>
+              ))}
+              <a href={restaurant.mailHref} className="break-all hover:text-white">
+                {restaurant.email}
+              </a>
+            </div>
           </div>
           <div>
             <p className="font-black uppercase">Öffnungszeiten</p>

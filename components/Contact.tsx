@@ -1,5 +1,5 @@
 ﻿import Image from "next/image";
-import { Clock, MapPin, Navigation, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, Navigation, Phone } from "lucide-react";
 import { contactImage, restaurant } from "@/lib/site-data";
 
 const googleMapSrc = "https://www.google.com/maps?q=52.4049612,13.5732529&z=16&hl=de&output=embed";
@@ -36,6 +36,13 @@ export function Contact() {
                   {phone}
                 </a>
               ))}
+            </div>
+            <div className="rounded-lg bg-[#FFFDF8] p-5 shadow-sm">
+              <Mail className="mb-3 text-[#B8322A]" />
+              <p className="font-bold text-[#5A3824]">E-Mail</p>
+              <a href={restaurant.mailHref} className="mt-1 block break-all text-[#7A6A58] hover:text-[#B8322A]">
+                {restaurant.email}
+              </a>
             </div>
             <div className="rounded-lg bg-[#FFFDF8] p-5 shadow-sm">
               <Clock className="mb-3 text-[#B8322A]" />

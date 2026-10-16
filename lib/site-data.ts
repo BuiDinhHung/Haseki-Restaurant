@@ -50,6 +50,7 @@ type RawMenuDraft = {
     cuisine: string;
     address: string;
     phones: string[];
+    email: string;
     openingHours: { days: string; time: string }[];
   };
   demoImages: { title: string; path: string }[];
@@ -113,6 +114,8 @@ export const restaurant = {
   cuisine: cleanText(draft.restaurant.cuisine),
   address: cleanText(draft.restaurant.address),
   phones: draft.restaurant.phones,
+  email: draft.restaurant.email,
+  mailHref: `mailto:${draft.restaurant.email}`,
   openingHours: draft.restaurant.openingHours.map((row) => ({
     days: cleanText(row.days),
     time: cleanText(row.time)
@@ -295,6 +298,7 @@ export const jsonLd = {
     addressCountry: "DE"
   },
   telephone: restaurant.phones[0],
+  email: restaurant.email,
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
