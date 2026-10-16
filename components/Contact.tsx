@@ -22,7 +22,7 @@ export function Contact() {
               />
             </div>
           </div>
-          <div className="mt-8 grid gap-4">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-lg bg-[#FFFDF8] p-5 shadow-sm">
               <MapPin className="mb-3 text-[#B8322A]" />
               <p className="font-bold text-[#5A3824]">Adresse</p>
@@ -57,14 +57,14 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-lg bg-[#FFFDF8] shadow-sm">
-          <div className="h-[420px] bg-[#F8F4EC] sm:h-[520px]">
+        <div className="flex flex-col overflow-hidden rounded-lg bg-[#FFFDF8] shadow-sm">
+          <div className="relative h-[420px] flex-1 bg-[#F8F4EC] sm:h-auto sm:min-h-[520px]">
             <iframe
               title="Google Map Haseki Restaurant"
               src={googleMapSrc}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="h-full w-full border-0"
+              className="absolute inset-0 h-full w-full border-0"
             />
           </div>
           <div className="grid gap-3 border-t border-[#5A3824]/10 p-5 sm:grid-cols-2">
